@@ -1,0 +1,314 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family= Source+Sans+Pro & display = swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Source Sans Pro;
+}
+
+header {
+    background-color: #d3d3d3;
+    position: fixed;
+    width: 100%;
+
+}
+
+.header-section {
+    max-width: 85vw;
+    height: 10vh;
+    padding: 20px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-title {
+    color: gray;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.header-title a {
+    color: gray;
+    text-decoration: none;
+}
+
+.header-title span {
+    color: #3500b0;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 10px 20px;
+    text-transform: uppercase;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: gray;
+}
+
+.banner {
+    background-image: url(../img/img-fundo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.banner-text {
+    background-color: #0000004c;
+    width: 30vw;
+    height: 30vh;
+    border-radius: 10px;
+    border: 1px solid #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center ;
+}
+
+.banner-text h1 {
+    color: #fff;
+    font-size: 3rem;
+    margin: 10px 0;
+}
+
+.banner-text p {
+    color: #fff;
+    font-size: 1.3rem;
+    margin-top: 3vh;
+    font-weight: normal;
+}
+
+.welcome-section {
+    margin: 40px 0;
+}
+
+.welcome-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.welcome-section p {
+    text-align: center;
+    margin-bottom: 15px;
+    color: #000;
+    font-weight: normal;
+}
+
+#room-section-links {
+    max-width: 85vw;
+    margin: 40px auto;
+    display: flex;
+    align-items: center;
+}
+
+.room-section-images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.room-section-images img {
+    width: calc((85vw - 20px) / 3);
+    margin: 0 5px;
+}
+
+.room-section-images a p {
+    text-transform: uppercase;
+    text-align: center;
+    color: #808080;
+    margin: 10px 0px;
+    padding: 10px;
+}
+
+.room-section-images a:hover {
+    text-decoration: underline;
+    font-weight: bolder;
+}
+
+.room-section-images a {
+    text-decoration: none;
+    color: gray;
+}
+
+.rotes h2, .rotes p {
+    text-align: center;
+    margin: 30px 0;
+    color: #000;
+}
+
+.rotes p {
+    font-weight: normal;
+}
+
+iframe {
+    width: 100%;
+}
+
+.about-section {
+    margin: 30px 0;
+}
+
+.about-section h2, .about-section p {
+    text-align: center;
+    margin: 30px 0;
+    color: #000;
+}
+
+.about-itens {
+    max-width: 85vw;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+article {
+    height: 35%;
+    max-width: 45%;
+    margin-right: 5%;
+    margin-bottom: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+article img {
+    max-width: 25%;
+    max-height: 100%;
+}
+
+.about-item-element {
+    width: 100%;
+}
+
+.about-item-element p {
+    text-align: left;
+    color: #000;
+    font-weight: normal;
+}
+
+footer {
+    width: 100%;
+    background-color: #49997D;
+}
+
+.footer-section {
+    margin: auto;
+    max-width: 85vw;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.footer-itens {
+    margin: 5px;
+    max-width: calc((85vw - 20px) / 4);
+    display: flex;
+    align-items: center;
+}
+
+.footer-itens img {
+    margin-right: 10px;
+}
+
+.footer-itens h3, p {
+    color: #fff;
+    font-weight: bolder;
+}
+
+.footer-copy {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+/* Room Pages */
+
+.single-rooms, 
+.couple-rooms,
+.family-rooms {
+    max-width: 85vw;
+    margin: 40px auto;
+}
+
+.single-rooms h2, 
+.couple-rooms h2,
+.family-rooms h2 {
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.single-rooms p, 
+.couple-rooms p,
+.family-rooms p {
+    color: #000;
+    font-weight: normal;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.single-rooms-images, 
+.couple-rooms-images,
+.family-rooms-images {
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.sigle-rooms-img, 
+.couple-rooms-img,
+.family-rooms-img {
+    margin: 10px 5px;
+    max-width: calc((100% - 30px) / 3);
+}
+
+.sigle-rooms-img img, 
+.couple-rooms-img img,
+.family-rooms-img img {
+    max-width: 100%;
+    height: 260px;
+}
+
+.single-room-list, 
+.couple-room-list,
+.family-room-list {
+    max-width: 85vw;
+    margin: auto;
+}
+
+.single-room-list h3, 
+.couple-room-list h3,
+.family-room-list h3 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.single-room-list ul, 
+.couple-room-list ul,
+.family-room-list ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.single-room-list ul li div, 
+.couple-room-list ul li div,
+.family-room-list ul li div {
+    max-width: calc(100% / 4);
+}
